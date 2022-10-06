@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+}
+
+
+.container{
+    max-width: 1100px;
+    margin-inline: auto;
+    margin-block: 80px;
+    background-color: #ffffff;
+
+}
+
+.title{
+    padding-block: 48px;
+    display: grid;
+    grid-gap: 20px;
+}
+
+.title::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 60px;
+    border: 1px solid #1791A0;
+    background: #1791A0;
+    margin-top: 20px;
+    
+}
+
+/* Adding a margin of 70px to the left of all the elements inside the title class. */
+.title> *{
+    margin-left: 70px;
+}
+
+
+
+/* Selecting the first child of the title class. */
+.title> :nth-child(1){
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+}
+.title> :nth-child(2){
+    font-size: 20px;
+    line-height: 30px;
+    color: #808080;
+}
+
+
+.testimonials-card{
+    display: grid;
+    cursor: pointer;
+}
+.quotes{
+    padding: 24px;
+    background: #9A9A9A;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Selecting the first child of the p tag. */
+.quotes> :nth-child(1){
+    color: #ffffff;
+    font-size: 28px;
+    padding-right: 16px;
+}
+
+.quotes > :nth-child(2){
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.half-box{
+    max-width: 27px;
+    min-height: 27px;
+    background: #9A9A9AB2;
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+
+.client-info{
+    display: flex;
+    gap: 16px;
+}
+
+.client-image{
+    max-width: 70px;
+    min-height: 70px;
+    border-radius: 50%;
+}
+
+.client-info span{
+    display: grid;
+}
+.client-info span> :nth-child(1){
+    font-size: 24px;
+    line-height: 24px;
+    color:#1791A0;
+}
+.client-info span> :nth-child(2){
+    font-size: 14px;
+    line-height: 14px;
+    color: #808080;
+}
+
+.owl-dots{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    text-align: center;
+    margin-top: 1.87rem;
+}
+
+.owl-dots button.owl-dot{
+    width: 11px;
+    height: 11px;
+    background-color: #808080;
+    margin-top: 0.6rem;
+}
+
+.owl-dots button.owl-dot.active,
+.owl-dots button.owl-dot.hover{
+    position: relative;
+    width: 22px;
+    height: 22px;
+    background-color: #ffffff;
+    border: 3px solid #1791A0;
+    top: -5px;
+}
+
+.owl-dots button.owl-dot.active span,
+.owl-dots button.owl-dot.hover span{
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    top: 0;
+    left: 0;
+    margin: 2.7px;
+    background-color:#1791A0;
+}
